@@ -1,0 +1,66 @@
+/* Reset default margins and paddings */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Light blue background as a fallback */
+}
+
+/* Make the canvas fill the entire window */
+#glCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Style for the score display */
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+/* Style for the game over overlay */
+#gameOverOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#gameOverOverlay h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background: #28a745;
+    color: white;
+    transition: background 0.3s;
+}
+
+#restartButton:hover {
+    background: #218838;
+}
